@@ -3,11 +3,17 @@ class PosORNegative
 {
     public static void main(String[] args)
     {
-    int no=34;
+    int no=0;
         //below if the condition checks if the number is greater than zero, and returns as a positive number if condition is true
-    if(no>0)
+        if(no>0)
     {
-    System.out.println("pos");
+    System.out.println("positive");
+    }
+        else if(no<0)
+        {
+    System.out.println("negative");
+
+
     }
     }
 }
