@@ -2,19 +2,18 @@
 
 import java.util.Scanner;
 
-public class AdditionOf2NumbersWithAnswer {
+public class AdditionOf2NumbersWithAnswer
+{
     public static void main(String[] args)
     {
-//        int a,b;
-//        Scanner x=new Scanner(System.in);
-//        System.out.println("Enter the value of a");
-//        a = x.nextInt();
-//        System.out.println("Enter the value of b");
-//        b = x.nextInt();
-//        System.out.println("The value assigned to x is: " +x.nextLine());
-//        System.out.println("The value assigned to a and b is: "+ (a + b));
-
-
-
+       int a,b;
+        Scanner x=new Scanner(System.in);
+        System.out.println("Enter the value of a");
+        a = x.nextInt();
+        System.out.println("Enter the value of b");
+        b = x.nextInt();
+        //The line below is not required, but may benefit for future use
+        // System.out.println("The value assigned to x is: " +x.nextLine());
+        System.out.println("The sum of a and b is: "+ (a + b));
     }
 }
