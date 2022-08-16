@@ -7,20 +7,28 @@ public class WatAPizza
     public static void main(String[] args)
     {
         String customerName="Gary", customerEmail="gary@123.com", address= "20 Marble Drive Eville";
-        int phoneNo=412312345, NoOfPizzasOrdered=5, noOfGarlicBreadOrdered=3, noOfBeveragesOrdered=3;
+        int phoneNo=412312345, noOfPizzasOrdered=5, noOfGarlicBreadOrdered=3, noOfBeveragesOrdered=3;
         double priceOfPizza= 12.99, priceOfGarlicBread= 5.99, priceOfBeverage= 1.99;
         char size='M';
-        double y= (priceOfPizza*NoOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
+        double y= (priceOfPizza*noOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
         Scanner x=new Scanner(System.in);
-        System.out.println(
-                "Sl No      Item Category" +
-                "------------------------" +
-                " 1) Pizza" +
-                " 2) Garlic Bread" +
-                " 3) Beverages" +
-                " Enter 1 for Pizza, 2 for Garlic Bread and 3 for Beverages");
-        y=x.nextDouble();
-        System.out.println(y);
+        System.out.println("Serial number \t"+"Item category \t"        );
+        System.out.println("1 \t"+  "\t\t\tPizza");
+        System.out.println("2 \t"+ "\t\t\tGarlic Bread" );
+        System.out.println("3 \t"+ "\t\t\tBeverages");
+        System.out.println("Enter your choice");
+        int choice = x.nextInt();
+        if(choice==1) {
+        double pizzaBill= priceOfPizza*noOfPizzasOrdered;
+        System.out.println("Total Pizza bill is "+ pizzaBill);
+    } else  if(choice==2){
+            System.out.println("The total garlic bill price is $" + priceOfGarlicBread*noOfGarlicBreadOrdered);
+        } else {
+            System.out.println("The price of the beverage is $"+ priceOfBeverage*noOfBeveragesOrdered);
+        }
+
+        System.out.println("Your total bill is $" + y);
+
 
 
 
