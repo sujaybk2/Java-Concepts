@@ -6,12 +6,36 @@ public class WatAPizza
 {
     public static void main(String[] args)
     {
-        String customerName="Gary", customerEmail="gary@123.com", address= "20 Marble Drive Eville";
-        int phoneNo=412312345, noOfPizzasOrdered=5, noOfGarlicBreadOrdered=3, noOfBeveragesOrdered=3;
+        //-----------------------First line is scanner---------------------
+        Scanner x=new Scanner(System.in);
+        //-----------------------Variable Declaration Starts---------------------
+        String customerName, customerEmail, address;
+        int phoneNo, noOfPizzasOrdered=5, noOfGarlicBreadOrdered=3, noOfBeveragesOrdered=3;
         double priceOfPizza= 12.99, priceOfGarlicBread= 5.99, priceOfBeverage= 1.99;
         char size='M';
         double y= (priceOfPizza*noOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
-        Scanner x=new Scanner(System.in);
+        //-----------------------Variable Declaration Ends---------------------
+        //-----------------------Below take input from the user----------------
+        System.out.println("Enter Customer's Name");
+        customerName= x.nextLine();
+        System.out.println("Enter Customer's Email address");
+        customerEmail=x.nextLine();
+        System.out.println("Enter Customer's home address");
+        address=x.nextLine();
+        System.out.println("Enter Customer's phone number");
+        phoneNo=x.nextInt();
+        System.out.println("Enter the number of pizzas you wish to order");
+        noOfPizzasOrdered=x.nextInt();
+
+
+        //---------------------End of taking Input from user---------------------------
+
+
+        //-----------------------Logic Starts (such as if, for, while, switch, etc)-------------------------------------------
+        //-----------------------Logic Ends-------------------------------------------
+        //-----------------------Output Begins (Print Statements)----------------------------
+        //-----------------------Output Ends (Print Statements)----------------------------
+        //-----------------------Now, run the code----------------------------------------
         System.out.println("Serial number \t"+"Item category \t"        );
         System.out.println("1 \t"+  "\t\t\tPizza");
         System.out.println("2 \t"+ "\t\t\tGarlic Bread" );
@@ -19,12 +43,11 @@ public class WatAPizza
         System.out.println("Enter your choice");
         int choice = x.nextInt();
         if(choice==1) {
-        double pizzaBill= priceOfPizza*noOfPizzasOrdered;
-        System.out.println("Total Pizza bill is "+ pizzaBill);
-    } else  if(choice==2){
-            System.out.println("The total garlic bill price is $" + priceOfGarlicBread*noOfGarlicBreadOrdered);
+        System.out.println("Your total pizza amount is $" + (priceOfPizza*noOfPizzasOrdered));
+        } else  if(choice==2){
+            System.out.println("The total garlic bread amount is $" + (priceOfGarlicBread*noOfGarlicBreadOrdered));
         } else {
-            System.out.println("The price of the beverage is $"+ priceOfBeverage*noOfBeveragesOrdered);
+            System.out.println("The total beverage amount is $" + (priceOfBeverage*noOfBeveragesOrdered));
         }
 
         System.out.println("Your total bill is $" + y);
