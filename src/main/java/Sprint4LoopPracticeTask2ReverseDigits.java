@@ -11,32 +11,23 @@ public class Sprint4LoopPracticeTask2ReverseDigits
     {
         //-----------------------First line is scanner---------------------
         Scanner x = new Scanner(System.in);
-        System.out.println("Enter a number");
         //-----------------------Variable Declaration Starts---------------
-        int num = x.nextInt();
-        int rev = 0;
-        while (num != 0);
+        int num, reversed =0;
+        //System.out.println("Enter a number: " + num);
+        //-----------------------Variable Declaration Ends-----------------
+        //-----------------------Below take input from the user------------
+        System.out.println("Enter any number");
+        num=x.nextInt();
+        //-----------------------End of taking Input from user------------------------
+        //-----------------------Logic Starts (such as if, for, while, switch, etc)---
+        while (num != 0)
         {
-            int div=num%10;
-            rev=rev*10+div;
+            int rem=num%10;
+            reversed=reversed*10+rem;
             num=num/10;
         }
-        String customerName, customerEmail, address;
-//        int phoneNo, noOfPizzasOrdered=0, noOfGarlicBreadOrdered=0, noOfBeveragesOrdered=0;
-//        double priceOfPizza= 12.99, priceOfGarlicBread= 5.99, priceOfBeverage= 1.99;
-//        char size='M';
-//        double orderSummary= (priceOfPizza*noOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
-        System.out.println("The reverse of the number is: ");
-            //-----------------------Variable Declaration Ends-----------------
-
-            //-----------------------Below take input from the user------------
-
-            //-----------------------End of taking Input from user------------------------
-
-            //-----------------------Logic Starts (such as if, for, while, switch, etc)---
-
-            //-----------------------Logic Ends-------------------------------------------
-
-            //-----------------------Output Begins (Print Statements)---------------------
+        //-----------------------Logic Ends-------------------------------------------
+        //-----------------------Output Begins (Print Statements)---------------------
+        System.out.println("The reverse of the number is: " + reversed);
         }
     }
