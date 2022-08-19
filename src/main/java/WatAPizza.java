@@ -11,10 +11,10 @@ public class WatAPizza
         Scanner x=new Scanner(System.in);
         //-----------------------Variable Declaration Starts---------------------
         String customerName, customerEmail, address;
-        int phoneNo, noOfPizzasOrdered, noOfGarlicBreadOrdered, noOfBeveragesOrdered;
+        int phoneNo, noOfPizzasOrdered=0, noOfGarlicBreadOrdered=0, noOfBeveragesOrdered=0;
         double priceOfPizza= 12.99, priceOfGarlicBread= 5.99, priceOfBeverage= 1.99;
         char size='M';
-        double y= (priceOfPizza*noOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
+        double orderSummary= (priceOfPizza*noOfPizzasOrdered) + (priceOfGarlicBread*noOfGarlicBreadOrdered) + (priceOfBeverage*noOfBeveragesOrdered);
         //-----------------------Variable Declaration Ends---------------------
         //-----------------------Below take input from the user----------------
         System.out.println("Enter Customer's Name");
@@ -49,7 +49,7 @@ public class WatAPizza
             System.out.println("The total beverage amount is $" + (priceOfBeverage*noOfBeveragesOrdered));
         }
 
-        System.out.println("Your total bill is $" + y);
+        System.out.println("Your total bill is $" + orderSummary);
 
 
 
