@@ -1,4 +1,4 @@
-//A teacher gives an eight-digit number to Bob to determine whether each digit is even or odd
+package Sprint4;//A teacher gives an eight-digit number to Bob to determine whether each digit is even or odd
 //If it is even, then he should display the sum of the even digits
 //If it is odd, then he should display the sum of the odd digits
 

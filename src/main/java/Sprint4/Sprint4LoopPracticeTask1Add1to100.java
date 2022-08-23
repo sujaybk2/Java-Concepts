@@ -1,3 +1,5 @@
+package Sprint4;
+
 //John has to add all numbers between 1-100. Use loop to complete.
 class LoopPracticeTask1 {
     public static void main(String[] args) {

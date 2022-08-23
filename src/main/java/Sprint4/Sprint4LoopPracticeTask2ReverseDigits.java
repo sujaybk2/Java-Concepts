@@ -1,4 +1,4 @@
-//Ron and Steve are playing a reverse number game where one has to give an integer to the other.
+package Sprint4;//Ron and Steve are playing a reverse number game where one has to give an integer to the other.
 //The other person receiving the integer needs to reverse the number and display output.
 //If any one of them fails to reverse the number, the game ends.
 //Write a program to reverse the number, store the reversed number in a variable, and print it.
