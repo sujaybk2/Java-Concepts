@@ -1,4 +1,4 @@
-//To keep track of its customers, Wat-a-Pizza wishes to store the details of its customer in its database. Write a
+package Sprint4;//To keep track of its customers, Wat-a-Pizza wishes to store the details of its customer in its database. Write a
 //program that stores each person's personal details and order history. The program should also calculate the bill amount
 //for each item ordered.
 import java.sql.SQLOutput;
