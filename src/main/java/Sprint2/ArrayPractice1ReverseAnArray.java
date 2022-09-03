@@ -5,6 +5,6 @@
 //
 //    public int[] getReverseArray(int [] array){
 //        //create an object of the class ReverseArrayDemo
-//        ReverseArrayDemo reverseArrayDemo = new ReverseArrayDemo();
+//        ArrayPractice1ReverseAnArray reverseArrayDemo = new ArrayPractice1ReverseAnArray();
 //    }
 //}
