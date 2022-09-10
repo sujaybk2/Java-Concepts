@@ -1,6 +1,6 @@
 package Sprint1;
 import java.util.Scanner;
-public class pHLevelAnalysis {
+public class Practice1pHLevelAnalysis {
     public static void main(String [] args){
         float phValue;
         Scanner scannerObj = new Scanner(System.in);
