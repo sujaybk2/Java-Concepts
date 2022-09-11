@@ -1,4 +1,5 @@
 package Sprint2;
+import NestedLoop.sortedArr;
 ////Steve is the coach of a soccer team. He has asked Ron who is one of the team members, to find the oldest player from
 ////the list of players. Help Ron write a programto calculate the maximum age from the given array that holds the age of
 ////all the players on the team.
@@ -35,6 +36,8 @@ class ArrayPractice2MaximumNumber {
 //
     public static void main(String[] args) {
         int[] soccerPlayerAge = {23, 34, 33, 24, 25, 26, 31};
+
+        sortedArr tryn = new sortedArr(soccerPlayerAge);
         for (int i = 0; i < soccerPlayerAge.length; i++) {
             System.out.println(soccerPlayerAge[i]);
         }
