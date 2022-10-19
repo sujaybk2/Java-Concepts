@@ -2,7 +2,7 @@ package library;
 
 public class Author {
     void displaychanges() {
-        book obj = new book();
-        obj.setBookTitle("Java");
+      //  Book obj = new Book();
+        //obj.setBookTitle("Java");
     }
 }
