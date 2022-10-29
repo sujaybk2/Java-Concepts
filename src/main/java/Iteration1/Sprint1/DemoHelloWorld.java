@@ -5,5 +5,19 @@ public class DemoHelloWorld {
         System.out.println("Hello World");
     }
 }
+/*Java Basics
+int number;
+float decimalNumber;
+char character;
+boolean bool;
+String str;
+
+Valid Variable Names:
+int _rollNo;
+int $;
+int $1234;
+int _4567;
+float salary;
+ */
 
 
